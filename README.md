@@ -6,7 +6,18 @@ This was made as a part of Web Dev Bootcamp from Udemy.
 
 Click the link to visit the [Newsletter App](https://memu-newsletter-app.herokuapp.com/)
 
-
+## Instructions
+To build the app
+```bash
+$ npm install body-parser
+$ npm install express
+$ npm install request
+```
+and then use
+```bash
+node app.js 
+```
+to run the app
 
 
 
