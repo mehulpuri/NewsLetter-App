@@ -1,0 +1,39 @@
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Success!</title>
+      <link rel="stylesheet" href="css/success.css">
+   </head>
+   <body>
+      <input type="checkbox" name="tgt" id="check">
+      <label for="check">
+         <div class="check-icon"></div>
+      </label>
+      <h2 id="txt">You have been added to the mailing List!</h2>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script>
+          var target = $('.check-icon');
+          setTimeout(function() {
+          $('input[name=tgt]').attr('checked', true);
+        }, 3000);
+
+        setTimeout(function() {
+        $("#txt").css("display", "block");
+      }, 3700);
+
+        //jq func to disable checkbox inp
+        $('input[type="checkbox"]').click(function(event) {
+        var $checkbox = $(this);
+
+
+        setTimeout(function() {
+          $checkbox.removeAttr('checked');
+        }, 0);
+
+        event.preventDefault();
+        event.stopPropagation();
+});
+      </script>
+   </body>
+</html>
